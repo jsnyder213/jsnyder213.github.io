@@ -30,11 +30,11 @@ footer{
     text-indent: 50px;
 }
 img {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     max-width: 100%;
     height: auto;
-    float: right;
+    float: center;
 }
 .wrapper {
     display: grid;
@@ -44,8 +44,8 @@ img {
     height: 720px;
 }
 header {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 nav{
     grid-column-start: 1;
