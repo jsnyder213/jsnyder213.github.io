@@ -29,3 +29,37 @@ footer{
 #div{
     text-indent: 50px;
 }
+img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 5fr 20fr 5fr;
+    grid-gap: 10px;
+    height: 720px;
+}
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/*img {
+   grid-column-start: 3;
+   grid-column-end: 4;
+}*/
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
