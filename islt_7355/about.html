@@ -2,11 +2,12 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>About Me</title>
 
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
+        <!--<link rel="stylesheet" href="style.css">-->
+        <!--<link rel="stylesheet" href="nav.css">-->
        <!-- <link rel="stylesheet" href="gridtest.css">-->
         
     <!--
@@ -22,12 +23,11 @@
     -->
     </head>
     <body>
-        <div class="wrapper">
-        <header>
-            <h1>About Me</h1>
-        </header>
-        <nav>
-            <ul>
+        <header class="header">
+            <a href="#" class="logo">About Me</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
                 <li>
                     <a href="index.html">Home Page</a>
                 </li>
@@ -49,9 +49,12 @@
                     <a href="#contact.html">Contact Page</a>
                 </li>
             </ul>
-        </nav>
+        </header>
         <img src="test.jpeg" alt="Test Image" width="480" height="345">
         <main>
+            <header>
+                <h1>About Me</h1>
+            </header>
             <p>I am currently the Operation Manager of a medical simulation center within the School of Medicine at the University of Missouri. 
                 I have a Bachelor of Science from Middle Tennessee State University, with an emphasis in Mass Communication/Computer Animation. 
                 I am on track to complete my master’s degree in Information Science & Learning Technologies from the University of Missouri in the fall of 2022. 
@@ -67,6 +70,6 @@
               <br>
         </main>
         <footer>Copyright 2022, Jason Snyder Portfolio - Contact: snyderjm@umsystem.edu</footer>
-    </div>
+        
     </body>
     </html>
