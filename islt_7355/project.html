@@ -2,9 +2,10 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <title>Project Page</title>
-        <link rel="stylesheet"href="style.css">
-        <link rel="stylesheet"href="nav.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
     <!--
         ****************************************************************
         Comment section
@@ -13,40 +14,43 @@
         this masters program
         Author: Jason Snyder
         Course: ISLT_7355
-        Developed: 7/3/2022
+        Developed: 7/3/2022 Revised: 7/10/2022
         Test: Test 7/3/2022; passed on Chrome
         ****************************************************************
     -->
      </head>
      <body>
-      <nav>
-         <ul>
-             <li>
-                 <a href="index.html">Home Page</a>
-             </li>
-             <li>
-                 <a href="about.html">About Page</a>
-             </li> 
-             <li class="dropdown">
-                 <a href="#projects.html">Projects Page</a>
-                 <div class="dropdown-content">
-                     <a href="#">Link 1</a>
-                     <a href="#">Link 2</a>
-                     <a href="#">Link 3</a>
-                 </div>
-             </li>
-             <li>
-                 <a href="reflection.html">Reflection Page</a>
-             </li>
-             <li>
-                 <a href="#contact.html">Contact Page</a>
-             </li>
-         </ul>
-     </nav>
-       <header>
-          <h1>Header Here</h1>
-       </header>
+        <header class="header">
+            <a href="#" class="logo">Project Page</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="about.html">About Page</a>
+                </li> 
+                <li class="dropdown">
+                    <a href="#projects.html">Projects Page</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="reflection.html">Reflection Page</a>
+                </li>
+                <li>
+                    <a href="#contact.html">Contact Page</a>
+                </li>
+            </ul>
+        </header>
        <main>
+        <header>
+            <h1>Header Here</h1>
+         </header>
           <p>Page content here 
           </p>
           <p>Additional Content if needed</p>  
