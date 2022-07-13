@@ -1,24 +1,50 @@
 /*Style for the page*/
 body{
-    font-family: calibri;
+    font-family: Calibri; 
     font-size: 100%;
     background-color: #ffffef;
     margin: 15px auto;
     padding: 15px 1.5em;
+    color:black
 }
+/*printable section */
+@media print {
+    .header,
+    .menu-btn,
+    .menu-icon,
+    .menu,
+    img {
+        display: none;
+    }
+
+    body  {
+        margin-left: 1in; 
+        margin-right: 1in;
+        font-family: georgia, serif;
+        font-size: 12pt;
+        background:none;
+        color:black;
+    }
+   h1,h2,h3,h4,h5,h6 {
+    color:#000;
+   }
+}
+
+/* site style */
 h1 {
-    color: #c90;
+    /*color: #c90;*/
     text-align: center;
     }
 h2 {
-    color: #c90;
+    /*color: #c90;*/
 }
 p{
-    color: #006;
+    font-family: 'Cormorant SC', serif;
+    color: black;
 }
 footer{
     margin-top: 2em;
-    border-top: 2px solid #c90;
+    /*border-top: 2px solid #c90;*/
     padding-top: .7em;
     text-align: center;
     /*grid-column-start:2;
