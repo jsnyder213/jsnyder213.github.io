@@ -43,12 +43,19 @@ p{
     color: black;
 }
 footer{
+    font-weight: bold;
     margin-top: 2em;
-    /*border-top: 2px solid #c90;*/
+    border-top: 2px solid #c90;
     padding-top: .7em;
     text-align: center;
     /*grid-column-start:2;
     grid-column-start:4;*/
+    background-image: url("../islt_7355/images/background.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+/*background-image: repeating-conic-gradient(red 10%, yellow 20%);*/
+
 }
 header {
     grid-column-start: 2;
@@ -57,13 +64,14 @@ header {
 /*#div{
     text-indent: 50px;
 }*/
-img {
+/*img {
    grid-column: 2 /span 1;
     /*grid-column-end: 4;*/
-    max-width: 100%;
+   /* max-width: 100%;
     height: auto;
     float: right;
-}
+}*/
+
 .wrapper {
     display: grid;
     grid-template: 150px 150px /auto auto auto;
@@ -72,4 +80,3 @@ img {
     grid-gap:10px;
     height: 720px;
 }
-
