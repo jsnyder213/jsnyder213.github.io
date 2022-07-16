@@ -1,0 +1,92 @@
+/*Style for the Page*/
+body{
+    font-family: Calibri;
+    font-size:100%;
+    background-color: #ffffef;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+}
+h1{
+    color:#c90;
+    text-align: center;
+}
+h2{
+    color:#c90;
+}
+p{
+    font-family: calibri;
+    color:blue;
+}
+footer{
+    margin-top: 2em;
+    border-top: 2px solid #c90;
+    padding-top: .7em;
+    text-align: center; 
+}
+
+
+
+/*Printable Section*/
+@media print {
+    .navigation,
+    .navbar,
+
+    img {
+        display: none;
+    }
+body {
+    margin-left: 1in;
+    margin-right: 1in;
+    font-family: georgia, serif;
+    font-size: 12pt;
+    background: none;
+    color:black;
+}
+}
+
+/*Grid layout*/
+.container{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 15% 10% 70% 5%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navigation navigation"
+        "header header"
+        "content image"
+        "footer footer";
+}
+.navigation{
+    grid-area:navigation;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /*padding: 5px 5px 5px 5px;
+    font-size: 25%%;*/
+    text-align: center;
+}
+/*Header styling*/
+.header { 
+    grid-area:header;
+    /*color:#c90;*/
+    text-size-adjust: 70%;
+    text-align:center;
+}
+.image {
+    grid-area:image;
+    grid-column-start:3;
+    grid-column-end: 4;
+    size-adjust:auto;
+    padding:5%;
+}
+.content{
+    grid-area:content;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 2em;
+    font-size: 12pt;
+}
+.footer{
+    grid-area:footer;
+    text-align:center;
+}

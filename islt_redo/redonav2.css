@@ -1,0 +1,91 @@
+/*Navigation Bar*/
+.navigation {
+    background-color: #c90;
+    font-family: calibri;
+    padding: 15px 15px 15px 15px;
+    font-size: 150%;
+    text-align: center;
+}
+.navbar li {
+    color: blue;
+    display: inline;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+}
+.navigation ul a:hover{
+    background-color:#ffffef
+}
+
+/*Navigation Dropdown*/
+.navigation .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #ffffef;
+    min-width: 160px;
+    z-index:1;
+}
+.navigation .dropdown-content a:hover {
+    background-color: #c90;}
+.dropdown:hover .dropdown-content{
+    display:inline;
+}
+
+.navigation .dropdown-content a{
+    color:#006;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*Hamburger menu*/
+#hamburgernav {
+    width:100%;
+    background: #c90;
+    position: sticky;
+    top:0;
+}
+li {
+    display:inline;
+    text-align:center;
+    padding: 10px 10px 10px 10px;
+}
+#hamburgeritems {
+    display:flex;
+}
+#hamburgeritems a {
+flex-grow:1;
+flex-basis:0;
+padding: 10px;
+color: rgb(23, 0, 128);
+text-decoration:none;
+text-align:center;
+}
+#hamburgeritems a:hover {
+background:#ffffef;
+}
+/*Hide Hamburger menu*/
+#hamburgernav label, #hamburger {display:none;}
+/*Toggle Hmaburger menu*/
+/*#hamburgeritems {display:none;}*/
+#hamburger input:checked ~ #hamburgeritems{display:block;}
+
+@media screen and (max-width: 768px){
+    #hamburgeritems a{
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #c90;
+    }
+    #hamburgernav label, #hamburger {display:inline;}
+}
+/*#hamburgernav label {
+    display:inline-block;
+    color: rgb(23, 0, 128); /*change to blue*/
+    /*background: #ffffef;
+    font-style: normal;
+    font-size: 1.2em;
+    padding:5px;
+}*/
+
+
