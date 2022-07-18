@@ -1,3 +1,58 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+    }
+
+nav>ul li {
+    display:inline-block;
+    width: 100px; 
+    position: relative; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    }
+
+nav ul li {
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 2px;
+    }
+
+nav a {
+    text-decoration: none;
+    display: block;
+    border: 3px dashed rgb(0, 0, 0);
+    color:black;
+    border-radius:5px;
+    padding: 15px 15px 15px 15px;
+    }
+
+/*CSS for <a> elements*/
+nav a:link{
+    background-color: #cc6600;
+    }
+
+nav a:hover, nav a:focus {
+    background-color: rgb(255, 255, 255);
+    }
+
+nav a:active{
+    background-color: #fd7404;
+    }
+
+/*Position drop down menu*/
+nav ul>li ul {
+    position: absolute;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: -14px;
+    display: none;
+    }
+
+nav>ul>li:hover>ul{
+    display:block;
+}
+
 /*Navigation Bar*/
 nav {
     background-color: #c90;
@@ -5,7 +60,7 @@ nav {
     padding: 15px 15px 15px 15px;
     font-size: 150%;
     text-align: center;
-}
+}/*
 nav ul{
     display: inline;
     justify-content: flex-end;
@@ -16,7 +71,16 @@ nav ul li{
     list-style-type: none;
     position: relative;
 }
-nav li {
+nav>ul li{
+    display:inline-block;
+    width: 150px;
+    position:relative;
+    text-align:center;
+}
+/*nav>ul li a:hover{
+    background-color: #c90;
+}*/
+/*nav li {
     display: inline;
     text-align: center;
     padding: 15px 15px 15px 15px;
@@ -57,7 +121,6 @@ nav>ul>li:hover>ul{
     }
     nav ul li a{
         display: block;
-        /*width: 50%;*/
         padding-left: 0;
         padding-right: 30px;
         padding-top: 20px;
